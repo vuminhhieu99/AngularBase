@@ -1,0 +1,16 @@
+.ah-grid {
+    display: -ms-grid !important;
+    display:  grid !important;
+}
+
+.ah-grid-auto-flow-row { 
+    grid-auto-flow: row !important;
+}
+
+.ah-grid-auto-flow-column {
+    grid-auto-flow: column !important; 
+}
+
+.ah-grid-auto-flow-dense {
+    grid-auto-flow: dense !important; 
+}

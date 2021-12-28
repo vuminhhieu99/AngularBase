@@ -1,0 +1,27 @@
+@import "assets/scss/config/colors";
+@import "assets/scss/config/fonts";
+@import "assets/scss/config/icons";
+@import "assets/scss/config/mixins";
+@import "assets/scss/config/ui";
+
+
+// disable
+$disble: 0.65;
+
+a {
+    text-decoration: none !important;
+}
+
+ul >li {
+    list-style: none;
+}
+
+body{
+    height: 100%;
+    color: $color-primary !important;
+}
+
+// disable
+.disable{
+    opacity: $disble;
+}
