@@ -1,0 +1,42 @@
+@import "../../../../styles.scss";
+
+:host{
+    .form-group{
+        margin-bottom: 1rem;
+        .col-form-label{
+            font-weight: 700;
+            max-height: 200px;
+        }
+        .input-wapper{
+            .icon-right{
+                padding-right: 2.25rem !important;
+            }
+            .icon-left{
+                padding-left: 2.25rem !important;
+            }
+        }
+        .icon-click{
+            position: absolute;
+            width: 32px;
+            height: 38px;
+            padding: 12px 0;
+            cursor: pointer;
+            text-align: center;
+            opacity: 0.6;
+        }
+        .icon-click.icon-right{
+            right: 0;
+        }
+        .icon-click.icon-left{
+            left: 0;
+        }
+        .error{
+            background-color: red;
+            margin: 4px 0;
+            max-height: 12px;
+            width: 100%;
+
+        }        
+        
+    }
+}

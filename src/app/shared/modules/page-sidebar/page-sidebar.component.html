@@ -1,3 +1,28 @@
-<aside class="page-header">
-    sidebar
-</aside>
+<div class="page-sidebar ah-flex ah-flex-column ah-align-items-center">
+  <div class="form-temp ah-flex ah-align-items-center">
+    <div class="avatar ah-flex ah-align-items-center ah-justify-content-center">
+      <i class="fa-solid fa-school"></i>
+    </div>
+    <div class="content-sidebar ah-flex ah-align-items-center">
+      <p class="color-grey6 line-text-1">{{"MTA" | translate}}</p>
+    </div>
+  </div>
+  <ul class="form-menu ah-flex-column">
+    <!-- <li *ngFor="let module of modules" class="menu-item" [ngClass]="{'active' : module.active}" (click)="chooseModule(module)"> -->
+      <li *ngFor="let module of modules" class="menu-item">
+      <a [routerLink]="module.route"
+      routerLinkActive="active" class="menu-link ah-flex ah-align-items-center">
+        <div class="form-icon = ah-flex ah-justify-content-center">
+          <i class="fa-solid {{module.icon}}"></i>
+        </div>
+        <div class="content-sidebar ah-flex ah-align-items-center">
+          <p class="line-text-1">{{module.name | translate}}</p>
+        </div>
+      </a>
+    </li>   
+  </ul>
+</div>
+<div class="menu-sidebar-mini ah-hover ah-flex ah-justify-content-center ah-align-items-center"
+  (click)="showSideBar()">
+  <i class="fas fa-bars"></i>
+</div>

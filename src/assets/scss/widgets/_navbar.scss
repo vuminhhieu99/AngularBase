@@ -47,9 +47,14 @@
     justify-content: flex-start !important;
 }
 
+.ah-justify-content-center{
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
 .ah-justify-content-between{
-    -ms-flex-pack: end !important;
-    justify-content: flex-start !important;
+    -ms-flex-pack: center !important;
+    justify-content: space-between !important;
 }
 
 .ah-justify-content-around{

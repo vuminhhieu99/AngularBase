@@ -1,0 +1,17 @@
+<div class="form-group">
+    <div class="ah-flex" [ngClass]="{'ah-flex-row': isHorizontal, 'ah-flex-column': !isHorizontal}">
+        <div class="col-form-label" *ngIf="isShowLabel">{{label}}</div>
+        <div class="input-wapper ah-flex ah-align-content-between ah-relative">
+            <input type="text" class="form-control" [ngClass]="{'is-valid': error.isError, 'icon-right': (iconRight && icon), 'icon-left': (iconLeft && icon)}"
+            [(ngModel)]="value" (ngModelChange)="dataChanged($event)">
+            <div class="icon-click" [ngClass]="{'icon-right' : (iconRight && icon)}" [ngClass]="{'icon-left': (iconLeft && icon)}"
+            [ngClass]="icon"></div>
+        </div>
+    </div>
+
+    <div class="error line-text-1" *ngIf="error.isError">
+        *{{error.message}}
+    </div>
+
+
+</div>

@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div class="wapper-toolbar ah-flex ah-flex-row ah-align-items-center">
+        <ng-container *ngIf="!isCheckboxList">
+            <ng-container *ngTemplateOutlet="toolbar"></ng-container>            
+        </ng-container>
+        <ng-container *ngIf="isCheckboxList">
+            <ng-container *ngTemplateOutlet="toolbarCheckbox"></ng-container>
+        </ng-container>
+    </div>
+    <div class="wapper-content ah-flex ah-flex-row">
+        <div class="wapper-grid">
+            <ng-container *ngTemplateOutlet="grid"></ng-container>            
+        </div>
+        <div class="wapper-sidebar-right" [style.width]="isShowSideBarRight? '320px' : '0px'">
+            <div class="expand-sidebar" (click)="isShowSideBarRight = !isShowSideBarRight">
+                <i class="fa-solid " [ngClass]="{'fa-angle-left': !isShowSideBarRight, 'fa-angle-right': isShowSideBarRight}"></i>
+            </div>
+            <div class="area-sidebar">
+                <ng-container *ngTemplateOutlet="sidebarRight"></ng-container>            
+            </div>
+            
+        </div>
+    </div>
+</div>

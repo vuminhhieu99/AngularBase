@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-page-header',
@@ -11,5 +11,6 @@ export class PageHeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

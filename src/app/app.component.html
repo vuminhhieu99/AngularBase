@@ -1,2 +1,11 @@
-<app-page-header></app-page-header>
-<app-page-sidebar></app-page-sidebar>
+<div class="wrapper-body ah-flex ah-flex-row">
+    <app-page-sidebar class="ah-relative" *ngIf="currentUser || token"></app-page-sidebar>
+    <div class="ah-relative width-100 wrapper-right">
+        <app-page-header class="page-header" *ngIf="currentUser || token"></app-page-header>        
+        <div class="wrapper-content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,13 @@
+
+@import '../../../../styles.scss';
+
+:host{
+    .dataTables_length label{
+        font-weight: normal;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .form-grid{
+        width: fit-content;
+    }
+}

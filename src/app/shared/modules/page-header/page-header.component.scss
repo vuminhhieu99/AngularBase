@@ -1,0 +1,16 @@
+@import "../../../../styles.scss";
+
+:host{
+    .page-header{
+        padding: 8px;    
+        background-color: $color-white;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-bottom: 1px solid #dee2e6;
+        height: 46px; 
+        box-shadow: 0 2px 4px 0 #1f222929;
+        z-index: 1;
+    }
+}

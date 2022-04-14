@@ -1,0 +1,46 @@
+@mixin make-property($property, $value) {
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, "" {
+        #{$prefix}#{$property} : $value;
+    }
+}
+
+@mixin border-radius($radius: 4px) {
+    @include make-property(border-radius, $radius);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+@mixin opacity($opacity: 0.5){
+    -webkit-opacity: $opacity;
+    -moz-opacity: $opacity;
+    opacity: opacity;
+    filter: alpha(opacity=$opacity);
+}
+
+@mixin button($border-color, $background-color, $text-color){
+    line-height:20px;
+    padding: .5rem 1rem;
+    @include border-radius(.3rem);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;    
+    font-weight: $font-weight-regular;
+    font-variant: normal;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    position: relative;
+}
+
+@mixin line-text($line-clamp){
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line-clamp;
+    text-overflow: ellipsis;
+    word-break:  break-all;
+    width: 100%;
+}

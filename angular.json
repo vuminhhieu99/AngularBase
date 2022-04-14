@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-themeOne": {
+    "angular-base": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-themeOne",
+            "outputPath": "dist/angular-base",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -34,20 +34,26 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",  
+              "src/styles.scss",            
+              "src/assets/styles/jquery-ui/jquery-ui.min.css",              
               "src/assets/styles/bootstrap/bootstrap.min.css",
-              "src/assets/styles/jquery-ui/jquery-ui.min.css",
               "src/assets/styles/jsgrid/jsgrid.min.css",
-              "src/assets/styles/select2/select2.min.css"             
+              "src/assets/styles/jsgrid/jsgrid-theme.min.css",
+              "src/assets/styles/select2/select2.min.css",
+              "src/assets/styles/toastr/toastr.min.css", 
+              "src/assets/styles/font-awesome/css/all.min.css",
+              "src/assets/styles/adminlte/adminlte.min.css"         
             ],
             "scripts": [     
-              "src/assets/scripts/bootstrap/bootstrap.min.js",
-              "src/assets/scripts/bootstrap-notify/bootstrap-notify.min.js",
               "src/assets/scripts/jquery/jquery-3.6.0.min.js",
               "src/assets/scripts/jquery-ui/jquery-ui.min.js",
+              "src/assets/scripts/bootstrap/bootstrap.min.js",
+              "src/assets/scripts/bootstrap-notify/bootstrap-notify.min.js",   
+              "src/assets/scripts/toastr/toastr.min.js",          
               "src/assets/scripts/jsgrid/jsgrid.min.js",
-              "src/assets/scripts/select2/select2.full.min.js"                 
+              "src/assets/scripts/select2/select2.full.min.js",
+              "src/assets/scripts/adminlte/adminlte.min.js"                 
             ]
           },
           "configurations": {
@@ -87,10 +93,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-themeOne:build:production"
+              "browserTarget": "angular-base:build:production"
             },
             "development": {
-              "browserTarget": "angular-themeOne:build:development"
+              "browserTarget": "angular-base:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,7 +104,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-themeOne:build"
+            "browserTarget": "angular-base:build"
           }
         },
         "test": {
@@ -113,9 +119,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [             
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"             
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts/jquery/jquery-3.6.0.min.js",
+              "src/assets/scripts/jquery-ui/jquery-ui.min.js",
+              "src/assets/scripts/bootstrap/bootstrap.min.js",
+              "src/assets/scripts/bootstrap-notify/bootstrap-notify.min.js",  
+              "src/assets/scripts/toastr/toastr.min.js",                      
+              "src/assets/scripts/jsgrid/jsgrid.min.js",
+              "src/assets/scripts/select2/select2.full.min.js"  ]
           }
         }
       }

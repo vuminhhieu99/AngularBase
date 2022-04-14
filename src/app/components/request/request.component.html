@@ -1,0 +1,15 @@
+<app-ah-form-list [isCheckboxList]="isCheckboxList" [toolbar]="toolbar" [toolbarCheckbox]="toolbarCheckbox" [grid]="grid" [sidebarRight]="sidebarRight">
+    <ng-template #toolbar>
+        <div class="width-100 ah-flex ah-flex-row ah-justify-content-between ah-align-items-center">
+            <h2 class="m-0 ml-2 mr-1">{{'Roles' | translate}}</h2>
+            <div class="ah-flex ah-flex-row ah-justify-content-between ah-align-items-center">
+                <app-ah-textbox [isShowLabel]="false" [(value)]="searchText" [name]="'searchText'" [icon]="'fa-solid fa-magnifying-glass'" [iconLeft]="true"></app-ah-textbox>
+                <app-ah-button [icon]="'fa-solid fa-plus'" [Type]="'bg-gradient'" [color]="'primary'" (btnClick)="addRequest()" [text]="'RoleTrans.Add' | translate" [padding]="'0 12px'"></app-ah-button>
+            </div>
+        </div>      
+       
+    </ng-template>
+    <ng-template #toolbarCheckbox><p>toolbarCheckbox</p></ng-template>
+    <ng-template #grid><app-ah-grid [moduleCode]="moduleCode.Request" [columns]="columns"></app-ah-grid></ng-template>
+    <ng-template #sidebarRight></ng-template>    
+</app-ah-form-list>

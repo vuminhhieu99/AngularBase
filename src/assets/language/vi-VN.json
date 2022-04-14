@@ -1,0 +1,22 @@
+{
+    "MTA": "HV Kỹ thuật Quân Sự",
+    "Dashboard" : "Tổng quan",
+    "Request" : "Yêu cầu",
+    "MyRequest" : "Yêu cầu của tôi",
+    "TopicRequest" : "Chủ đề yêu cầu",
+    "Student" : "Sinh viên",
+    "Teacher" : "Giáo viên",
+    "Roles": "Quyền",
+    "RoleGroup": "Nhóm quyền",
+    "Users": "Người dùng",
+    "UserGroup" : "Nhóm người dùng",
+    "Login": {
+        "Username" : "Tài khoản",
+        "Password" : "Mật khẩu",
+        "RememberMe" : "Nhớ mật khẩu"
+    },
+    "RoleTrans": {
+        "Add": "Thêm quyền"
+    },
+    "ErrorService":"Lỗi hệ thống"
+}

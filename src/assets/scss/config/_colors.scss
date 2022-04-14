@@ -1,3 +1,4 @@
+
 $color-dark-blue: #2063a7;
 
 
@@ -22,11 +23,147 @@ $color-orange: #ff761b;
 
 $color-topic-1 : #326cb8;
 
+$color-grey: #586074;
+$color-grey1: #d3d7de;
+$color-grey2: #e2e4e9;
+$color-grey3: #f0f2f4;
+$color-grey4: #c5c9d3;
+$color-grey5: #99a1b2;
+$color-grey6: #7c869c;
+$color-grey7: #586074;
+$color-grey8: #343a40;
+
+
+
+
+
 // color of topic
 
+$color-primary: #212121;
 
+//--------------------------------------------------------------------------------
 // notify
 $color-notify-success: $color-green;
 $color-notify-success: $color-green;
+//
 
+// color base
+$color-white: #ffffff;
+$color-black: #000000;
 //disable
+
+.color-white {
+    color: $color-white;
+}
+
+
+.color-black {
+    color: $color-black;
+}
+
+
+.color-dark-blue {
+    color: $color-dark-blue;
+}
+
+
+.color-blue {
+    color: $color-blue;
+}
+
+
+.color-light-blue {
+    color: $color-light-blue;
+}
+
+.color-blue-notify {
+    color: $color-blue-notify;
+}
+
+.color-light-blue {
+    color: $color-light-blue;
+}
+
+.color-dark-red {
+    color: $color-dark-red;
+}
+
+.color-red {
+    color: $color-red;
+}
+
+.color-light-red {
+    color: $color-light-red;
+}
+
+.color-dark-green {
+    color: $color-dark-red;
+}
+
+.color-green {
+    color: $color-red;
+}
+
+.color-light-green {
+    color: $color-light-red;
+}
+
+.color-yellow {
+    color: $color-yellow;
+}
+
+.color-gold {
+    color: $color-gold;
+}
+
+.color-light-yellow {
+    color: $color-light-yellow;
+}
+
+.color-orange {
+    color: $color-orange;
+}
+
+.color-topic-1 {
+    color: $color-topic-1;
+}
+
+.color-grey {
+    color: $color-grey;
+}
+
+.color-grey1 {
+    color: $color-grey1;
+}
+
+.color-grey {
+    color: $color-grey;
+}
+
+.color-grey2 {
+    color: $color-grey2;
+}
+
+.color-grey3 {
+    color: $color-grey3;
+}
+
+.color-grey4 {
+    color: $color-grey4;
+}
+
+.color-grey5 {
+    color: $color-grey5;
+}
+
+.color-grey6 {
+    color: $color-grey6;
+}
+
+.color-grey7 {
+    color: $color-grey7;
+}
+
+.color-grey8 {
+    color: $color-grey8;
+}

@@ -1,0 +1,66 @@
+<div class="ah-fixed form-login ah-flex ah-align-items-center ah-justify-content-center">
+    <form [formGroup]="loginFormGroup" >
+        <h1>Quản lý tiếp đón MTA </h1>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="form2Example1" class="form-control" formControlName="username" placeholder="Tài khoản hoặc email" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" /> 
+            <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                <div *ngIf="f.username.errors.required">Username is required</div>
+            </div>          
+        </div>
+    
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <input type="password" id="form2Example2" class="form-control" formControlName="password" placeholder="Mật khẩu" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"/>      
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+            </div>     
+        </div>
+    
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                    <label class="form-check-label" for="form2Example31">{{'RememberMe' | translate}}</label>
+                </div>
+            </div>
+    
+            <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+            </div>
+        </div>
+    
+        <!-- Submit button -->
+        <button type="button" class="btn btn-primary btn-block mb-4" (click)="login()">Sign in</button>
+    
+        <!-- Register buttons -->
+        <div class="text-center">
+            <p>Not a member? <a href="#!">Register</a></p>
+            <p>or sign up with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+            </button>
+        </div>
+    
+    </form>
+    
+</div>
+
+<div *ngIf="isLoading" class="mark-loading">
+    <div class="spinner-border text-primary" role="status"></div>
+</div>
