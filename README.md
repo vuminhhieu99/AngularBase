@@ -3,12 +3,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
 
 # Install
-install material
-npm install -g @angular/cli@12.1.3
-pip install requests
-npm install @ngx-translate/core --save
-npm install --save lodash
-npm install --save-dev @types/lodash
+## install material
+## npm install -g @angular/cli@12.1.3
+## pip install requests
+## npm install @ngx-translate/core --save
+## npm install --save lodash
+## npm install --save-dev @types/lodash
 
 ## Development server
 
